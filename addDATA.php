@@ -12,12 +12,32 @@
         echo "error";
         die(print_r(sqlsrv_errors(), true));
     }
-   
+
+   if (isset($_POST["submit"]))
+	{
+        if($_POST['HP']==""){
+            $_POST['HP']="0";
+        }
+         if($_POST['ATTACK']==""){
+            $_POST['ATTACK']="0";
+        }
+         if($_POST['DEFENSE']==""){
+            $_POST['DEFENSE']="0";
+        }
+         if($_POST['SPATK']==""){
+            $_POST['SPATK']="0";
+        }
+         if($_POST['SPDEF']==""){
+            $_POST['SPDEF']="0";
+        }
+         if($_POST['SPEED']==""){
+            $_POST['SPEED']="0";
+        }
 	 
 	// First insert data to the Parts table
-	$sql = "INSERT INTO pokemonDataCenter(name,type1,type2,HP,Attack,Defense,attackSpeed,defenseSpeed,Speed,Generation,legendary)
-    VALUES('".$_POST['NAME']."','".$_POST['TYPE1']."','".$_POST['TYPE2']."',".$_POST['HP'].",".$_POST['ATTACK']."
-     ,".$_POST['DEFENSE'].",".$_POST['SPATK'].",".$_POST['SPDEF'].",".$_POST['SPEED'].",".$_POST['GENERATION'].",".$_POST['LEGENDARY'].");"; 
+	$sql = "INSERT INTO Food(GPA, Gender, coffee, comfort_food, comfort_food_reasons, diet_current, eating_changes, fav_cuisine, food_childhood, healthy_meal, ideal_diet, meals_dinner_friend, type_sports, weight)
+    VALUES('".$_POST['GPA']."','".$_POST['Gender']."','".$_POST['coffee']."',".$_POST['comfort_food'].",".$_POST['comfort_food_reasons']."
+     ,".$_POST['diet_current'].",".$_POST['eating_changes'].",".$_POST['fav_cuisine'].",".$_POST['food_childhood'].",".$_POST['healthy_meal'].",".$_POST['ideal_diet'].",".$_POST['meals_dinner_friend'].",".$_POST['type_sports'].",".$_POST['weight'].");"; 
 	//echo $sql."<br>"; //debug
 	$result = sqlsrv_query($conn, $sql);
 	// In case of failure
@@ -25,7 +45,7 @@
 	{
 		die("Couldn't add the part specified.<br>");
 	}
-	echo "The pokemon has been added to the database.<br><br>";
+	echo "The Data has been added to the database.<br><br>";
 	}
 ?>
 
