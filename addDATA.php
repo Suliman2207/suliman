@@ -53,12 +53,12 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>pokeWorld</title>
+        <title>FoodWorld</title>
     </head>
 
     <body bgcolor="#E6E6FA">
 <center>
-    <h1 style="color:#6666ff;">Here you can add a new pokemon to our world</h1></center>
+    <h1 style="color:#6666ff;">Here you can add a new Data to our world</h1></center>
         <br><br>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
     <table border="0" cellpadding="5">
@@ -66,8 +66,8 @@
        <td>
             <table border="0" cellpadding="5">
 		<tr>
-			<td><h0 style="color:#00284d;">Add Name:</h0></td>
-			<td><input name="NAME" type="text" size="40" required>*</td>
+			<td><h0 style="color:#00284d;">GPA:</h0></td>
+			<td><input name="GPA" type="number" size="40"></td>
 		</tr>
 		<tr>
             <td><h0 style="color:#00284d;">Add Type1:</h0></td>
