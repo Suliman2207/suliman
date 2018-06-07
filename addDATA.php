@@ -67,7 +67,7 @@
             <table border="0" cellpadding="5">
 		<tr>
 			<td><h0 style="color:#00284d;">GPA:</h0></td>
-			<td><input name="GPA" type="floaat" size="10"></td>
+			<td><input name="GPA" type="text" size="10"></td>
 		</tr>
 		    
 		<tr>
@@ -78,50 +78,72 @@
                 </select> </td>
 		</tr>
 		
+		    
+		<tr>
+                        <td><h0 style="color:#00284d;">coffee:</h0></td>
+			<td><select name="coffee" type="text">
+             <option value="2" selected> Yes </option>
+			 <option value="1"> No </option>
+                </select> </td>
+		</tr>    
+		    
+		    
 		    <tr>
-            <td><h0 style="color:#00284d;">Add Type1:</h0></td>
-			<td><input name="TYPE1" type="text" size="40"></td>
+            <td><h0 style="color:#00284d;">comfort_food:</h0></td>
+			<td><input name="comfort_food" type="text" size="40"></td>
 		</tr>
-        <tr>
-            <td><h0 style="color:#00284d;">Add Type2:</h0></td>
-			<td><input name="TYPE2" type="text" size="40"></td>
+        
+		    <tr>
+            <td><h0 style="color:#00284d;">comfort_food_reasons:</h0></td>
+			<td><input name="comfort_food_reasons" type="text" size="85"></td>
 		</tr>
+		 
+		  <tr>
+            <td><h0 style="color:#00284d;">Diet:</h0></td>
+			<td><input name="diet_current" type="text" size="40"></td>
+		</tr>  
+		    
 		<tr>
-            <td><h0 style="color:#00284d;">Hp:</h0></td>
-			<td><input name="HP" type="number" size="10"></td>
+            <td><h0 style="color:#00284d;">Eating changes:</h0></td>
+			<td><input name="eating_changes" type="text" size="40"></td>
+		</tr>      
+		
+		    <tr>
+            <td><h0 style="color:#00284d;">Favorite cuisine:</h0></td>
+			<td><input name="fav_cuisine" type="text" size="40"></td>
 		</tr>
+	
 		<tr>
-             <td><h0 style="color:#00284d;">Attack:</h0></td>
-			<td><input name="ATTACK" type="number" size="10"></td>
+            <td><h0 style="color:#00284d;">Childhood Food:</h0></td>
+			<td><input name="food_childhood" type="text" size="40"></td>
+		</tr>    
+		    
+		    <tr>
+            <td><h0 style="color:#00284d;">Healthy Meal:</h0></td>
+			<td><input name="healthy_meal" type="text" size="40"></td>
+		</tr>  
+		    
+		 <tr>
+            <td><h0 style="color:#00284d;">Ideal Diet:</h0></td>
+			<td><input name="ideal_diet" type="text" size="40"></td>
+		</tr>    
+		
+		    <tr>
+            <td><h0 style="color:#00284d;">Whats for dinner:</h0></td>
+			<td><input name="meals_dinner_friend" type="text" size="40"></td>
+		</tr> 
+		    
+		<tr>
+            <td><h0 style="color:#00284d;">Whats is your sport:</h0></td>
+			<td><input name="type_sports" type="text" size="40"></td>
+		</tr> 
+		  
+		    <tr>
+            <td><h0 style="color:#00284d;">weight:</h0></td>
+			<td><input name="weight" type="number" size="40"></td>
 		</tr>
-        <tr>
-            <td><h0 style="color:#00284d;">Defense:</h0></td>
-			<td><input name="DEFENSE" type="number" size="10"></td>
-		</tr>
-        <tr>
-            <td><h0 style="color:#00284d;">SP. Atk:</h0></td>
-			<td><input name="SPATK" type="number" size="10"></td>
-		</tr>
-        <tr>
-            <td><h0 style="color:#00284d;">SP. Def:</h0></td>
-			<td><input name="SPDEF" type="number" size="10"></td>
-		</tr>
-        <tr>
-            <td><h0 style="color:#00284d;">Speed:</h0></td>
-			<td><input name="SPEED" type="number" size="10" required>*</td>
-		</tr>
-        <tr>
-            <td><h0 style="color:#00284d;">Generation:</h0></td>
-			<td><select name="GENERATION" type="text">  
-             <option selected value="1">1</option>
-             <option value="2">2</option>
-             <option value="3">3</option>
-             <option value="4">4</option>
-             <option value="5">5</option>
-             <option value="6">6</option>
-              </select></td>
-		</tr>
-         
+		    
+		    
 		<tr>
 			<td colspan="2"><br><input name="submit" type="submit" value="Add him!"></td>
 		</tr>
