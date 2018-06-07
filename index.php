@@ -3,9 +3,9 @@
 <title>FOOD SURVEY</title>
 </head>
 <body bgcolor="#E6E6FB">
-<center><h1 style="color:#6666ff;">PokeDB</h1></center> 
-    <center><b><h0 style="color:#00284d;">Catching Pokemons couldn't be easier</h0></b></center>
-    <center><p><h0 style="color:#00284d;">This site will help you get usefull information about pokemons and will help you catch them all!</h0></p></center>
+<center><h1 style="color:#6666ff;">Welcome to the food survey of Suliman</h1></center> 
+    <center><b><h0 style="color:#00284d;">Suliman's Survey. The Best One Ever!</h0></b></center>
+    <center><p><h0 style="color:#00284d;">This site will help you get usefull information about FOOD!</h0></p></center>
     <br> <center><img src="pic2.jpg" alt="pokemonDB" style="width:350px;height:262.5px;"></center>
     <br><br>
 <a href="addPokemonFileData.php" type="text/html" target="_self" style="margin-left:50px;">Add pokemon file data</a><br>
