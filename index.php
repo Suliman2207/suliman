@@ -43,7 +43,7 @@
 
 $sql = "SELECT distinct type_sports, AVG(GPA) as AVG_GPA, AVG(weight) AS AVG_Weight
 FROM Food
-Where coffee=2 AND comfort_food LIKE 'chocolate' ";
+Where coffee=2 AND (comfort_food LIKE 'chocolate' OR comfort_food LIKE 'Chocolate')
 GROUP BY type_sports;";
 	    $result = sqlsrv_query($conn, $sql);
         if($result)
