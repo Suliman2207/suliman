@@ -1,11 +1,11 @@
 
 <html>
 <head>
-<title>pokeWorld</title>
+<title>FoodWorld</title>
 </head>
 <body bgcolor="#E6E6FA">
-      <center><h1 style="color:#6666ff;">Add pokemon file!</h1></center>
-    <br> <center><img src="pic5.gif" alt="pokemonDB" style="width:300px;height:225px;"></center>
+      <center><h1 style="color:#6666ff;">Add Food Survey file!</h1></center>
+    <br> <center><img src="food1.jpg" alt="food1" style="width:300px;height:225px;"></center>
 <br><form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data"> 
 <br><center><input name="csv" type="file" id="csv" /> 
 <br><br><input type="submit" name="submit" value="submit" /></center>
@@ -14,11 +14,10 @@
 
 <?php
 	// Connecting to the database
-     
-	$server = "motibahar.database.windows.net"; 
-    $user = "motibahar";
-    $pass = "mB05050514";
-    $database = "motibahar";
+	$server = "techniondbcourse01.database.windows.net"; 
+    $user = "suliman1";
+    $pass = "Qwerty12!";
+    $database = "suliman1";
     $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
     sqlsrv_configure('WarningsReturnAsErrors', 0);
     $conn = sqlsrv_connect($server, $c);
@@ -38,7 +37,7 @@
     $row = 1;
     if (($handle = fopen($file, "r")) !== FALSE) {
         while (($data = fgetcsv($handle,1000, ",")) !== FALSE) {
-         $sql="INSERT INTO pokemonDataCenter(name, type1, type2, HP, Attack, Defense, attackSpeed, defenseSpeed, Speed, Generation, Legendary) VALUES ( 
+         $sql="INSERT INTO Food(GPA, Gender, coffee, comfort_food, comfort_food_reasons, diet_current, eating_changes, fav_cuisine, food_childhood, healthy_meal, ideal_diet, meals_dinner_friend, type_sports, weight) VALUES ( 
         '".$data[0]."',
         '".$data[1]."', 
         '".$data[2]."',
@@ -49,7 +48,10 @@
         ".$data[7].",
         ".$data[8].",
         ".$data[9].",
-        ".$data[10]."
+	".$data[10].",
+	".$data[11].",
+	".$data[12].",
+        ".$data[13]."
         ); 
         ";
         
@@ -62,7 +64,7 @@
         }
         else
         {
-            echo "good! Thanks for uploading Pokemons";
+            echo "good! Thanks for uploading";
             
         }
         //echo $sql."<br>"; //debug
