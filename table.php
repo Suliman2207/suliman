@@ -1,8 +1,8 @@
 <html>
 
 <head>
-<link rel="stylesheet" href="../style.css" type="text/css">
-<title> Tables </title>
+    <link rel="stylesheet" href="../style.css" type="text/css">
+    <title> Tables </title>
 </head>
 
 <body style="text-align: center">
@@ -19,9 +19,7 @@
 </form>
 
 <?php
-// Connecting to the database
-
-$server = "suliman1.database.windows.net";
+$server = "tcp:suliman1.database.windows.net,1433";
 $user = "suliman1";
 $pass = "Qwerty12!";
 $database = "suliman1";
