@@ -12,7 +12,26 @@
         echo "error";
         die(print_r(sqlsrv_errors(), true));
     }
-  
+   if (isset($_POST["submit"]))
+	{
+        if($_POST['HP']==""){
+            $_POST['HP']="0";
+        }
+         if($_POST['ATTACK']==""){
+            $_POST['ATTACK']="0";
+        }
+         if($_POST['DEFENSE']==""){
+            $_POST['DEFENSE']="0";
+        }
+         if($_POST['SPATK']==""){
+            $_POST['SPATK']="0";
+        }
+         if($_POST['SPDEF']==""){
+            $_POST['SPDEF']="0";
+        }
+         if($_POST['SPEED']==""){
+            $_POST['SPEED']="0";
+        }
 	 
 	// First insert data to the Parts table
 	$sql = "INSERT INTO pokemonDataCenter(name,type1,type2,HP,Attack,Defense,attackSpeed,defenseSpeed,Speed,Generation,legendary)
