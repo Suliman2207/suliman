@@ -41,8 +41,8 @@
         <tbody>
 <?php
 
-$sql = "SELECT distinct Type1, COUNT(Type1) as counter
-FROM pokemonDataCenter
+$sql = "SELECT distinct type_sports, AVG(GPA) as AVG_GPA, AVG(weight) AS AVG_Weight
+FROM Food
 GROUP BY Type1;";
 	    $result = sqlsrv_query($conn, $sql);
         if($result)
@@ -54,7 +54,7 @@ GROUP BY Type1;";
         }
         else
         {
-            echo 'Error displaying Longest Drive Table';
+            echo 'Error';
         }
     ?>   
    </tbody>
