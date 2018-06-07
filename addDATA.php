@@ -69,7 +69,16 @@
 			<td><h0 style="color:#00284d;">GPA:</h0></td>
 			<td><input name="GPA" type="number" size="40"></td>
 		</tr>
+		    
 		<tr>
+                        <td><h0 style="color:#00284d;">Gender:</h0></td>
+			<td><select name="Gender" type="text">
+             <option value="1" selected> Male </option>
+			 <option value="2"> Female </option>
+                </select> </td>
+		</tr>
+		
+		    <tr>
             <td><h0 style="color:#00284d;">Add Type1:</h0></td>
 			<td><input name="TYPE1" type="text" size="40"></td>
 		</tr>
@@ -112,13 +121,7 @@
              <option value="6">6</option>
               </select></td>
 		</tr>
-         <tr>
-            <td><h0 style="color:#00284d;">Legendary:</h0></td>
-			<td><select name="LEGENDARY" type="text">
-             <option value="1" selected> Yes </option>
-			 <option value="0"> No </option>
-                </select> </td>
-		</tr>
+         
 		<tr>
 			<td colspan="2"><br><input name="submit" type="submit" value="Add him!"></td>
 		</tr>
