@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/suliman.iml" filepath="$PROJECT_DIR$/.idea/suliman.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/html.iml" filepath="$PROJECT_DIR$/.idea/html.iml" />
+      <module fileurl="file://$USER_HOME$/PhpstormProjects/suliman/.idea/suliman.iml" filepath="$USER_HOME$/PhpstormProjects/suliman/.idea/suliman.iml" />
     </modules>
   </component>
 </project>
