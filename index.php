@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>pokeWorld</title>
+<title>pokeWorldddd</title>
 </head>
 <body bgcolor="#E6E6FA">
 <center><h1 style="color:#6666ff;">PokeDB</h1></center> 
@@ -14,10 +14,10 @@
 
 <?php
 	// Connecting to the database
-	$server = "motibahar.database.windows.net"; 
-    $user = "motibahar";
-    $pass = "mB05050514";
-    $database = "motibahar";
+	$server = "techniondbcourse01.database.windows.net"; 
+    $user = "suliman1";
+    $pass = "Qwerty12!";
+    $database = "suliman1";
     $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
     sqlsrv_configure('WarningsReturnAsErrors', 0);
     $conn = sqlsrv_connect($server, $c);
