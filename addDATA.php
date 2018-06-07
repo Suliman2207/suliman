@@ -105,8 +105,7 @@
 		    <tr>
 		<td><h0 style="color:#00284d;">weight:</h0></td>
 			<td><input name="weight" type="number" size="10"></td>
-		    
-		    
+		    		</tr>		    
 		    <tr>
 			<td colspan="2"><br><input name="submit" type="submit" value="Add him!"></td>
 		</tr>
