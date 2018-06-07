@@ -6,11 +6,11 @@
 <center><h1 style="color:#6666ff;">Welcome to the food survey of Suliman</h1></center> 
     <center><b><h0 style="color:#00284d;">Suliman's Survey. The Best One Ever!</h0></b></center>
     <center><p><h0 style="color:#00284d;">This site will help you get usefull information about FOOD!</h0></p></center>
-    <br> <center><img src="pic2.jpg" alt="pokemonDB" style="width:350px;height:262.5px;"></center>
+    <br> <center><img src="food.jpg" alt="food" style="width:350px;height:262.5px;"></center>
     <br><br>
-<a href="addPokemonFileData.php" type="text/html" target="_self" style="margin-left:50px;">Add pokemon file data</a><br>
+<a href="addFOODSURVEYFileData.php" type="text/html" target="_self" style="margin-left:50px;">Add food survey file data</a><br>
     <br>
-<a href="addPokemon.php" type="text/html" target="_self" style="margin-left:50px;">Add pokemon</a><br>
+<a href="addDATA.php" type="text/html" target="_self" style="margin-left:50px;">Add DATA</a><br>
 
 <?php
 	// Connecting to the database
@@ -34,8 +34,8 @@
     <div>
     <table align="center" border="1">
         <thead><tr>
-        <th><h0 style="color:#00284d;">Pokemon type</h0></th>
-        <th><h0 style="color:#00284d;">Count of this type</h0></th>
+        <th><h0 style="color:#00284d;">1</h0></th>
+        <th><h0 style="color:#00284d;">2</h0></th>
         </tr></thead>
         <tbody>
 <?php
