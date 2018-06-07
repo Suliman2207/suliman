@@ -49,7 +49,7 @@ GROUP BY Type1;";
         {
             while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
 	        {
-	            echo '<tr><td>' . $row['Type1'] . '</td><td>' . $row['counter'];
+	            echo '<tr><td>' . $row['type_sports'] . '</td><td>' . $row['AVG_GPA'];
             }
         }
         else
