@@ -41,10 +41,9 @@
         <tbody>
 <?php
 
-$sql = "SELECT distinct type_sports, AVG(GPA) as Average GPA, AVG(weight) as Average Weight
-FROM Food
-Where coffee=2 AND comfort_food like 'chocolate%' ";
-GROUP BY type_sports;";
+$sql = "SELECT distinct Type1, COUNT(Type1) as counter
+FROM pokemonDataCenter
+GROUP BY Type1;";
 	    $result = sqlsrv_query($conn, $sql);
         if($result)
         {
@@ -55,7 +54,7 @@ GROUP BY type_sports;";
         }
         else
         {
-            echo 'Error';
+            echo 'Error displaying Longest Drive Table';
         }
     ?>   
    </tbody>
@@ -68,4 +67,3 @@ GROUP BY type_sports;";
         
 </body>
 </html>
-
