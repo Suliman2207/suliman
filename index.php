@@ -44,7 +44,7 @@
 $sql = "SELECT type_sports, AVG(GPA) as Average GPA, AVG(weight) as Average Weight
 FROM Food
 Where coffee=2 AND comfort_food like 'chocolate%' ";
-GROUP BY type_sports;";
+GROUP BY type_sports;"
 	    $result = sqlsrv_query($conn, $sql);
         if($result)
         {
