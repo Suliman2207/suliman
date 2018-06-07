@@ -43,7 +43,7 @@
 
 $sql = "SELECT distinct type_sports, AVG(GPA) as AVG_GPA, AVG(weight) AS AVG_Weight
 FROM Food
-GROUP BY Type1;";
+GROUP BY type_sports;";
 	    $result = sqlsrv_query($conn, $sql);
         if($result)
         {
