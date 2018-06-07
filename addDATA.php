@@ -1,10 +1,9 @@
 <?php
-// Connecting to the database
-     
-	$server = "motibahar.database.windows.net"; 
-    $user = "motibahar";
-    $pass = "mB05050514";
-    $database = "motibahar";
+	// Connecting to the database
+	$server = "techniondbcourse01.database.windows.net"; 
+    $user = "suliman1";
+    $pass = "Qwerty12!";
+    $database = "suliman1";
     $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
     sqlsrv_configure('WarningsReturnAsErrors', 0);
     $conn = sqlsrv_connect($server, $c);
