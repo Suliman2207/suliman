@@ -95,7 +95,7 @@
         
 		    <tr>
             <td><h0 style="color:#00284d;">comfort_food_reasons:</h0></td>
-			<td><input name="comfort_food_reasons" type="text" size="85"></td>
+			<td><input name="comfort_food_reasons" type="text" size="40"></td>
 		</tr>
 		 
 		  <tr>
@@ -145,14 +145,14 @@
 		    
 		    
 		<tr>
-			<td colspan="2"><br><input name="submit" type="submit" value="Add him!"></td>
+			<td colspan="2"><br><input name="submit" type="submit" value="Add!"></td>
 		</tr>
         <tr>
 			<td colspan="2"><button type="reset" value="Reset">Reset</button></td>
 		</tr>
        </table>
     <p><a href="index.php" type="text/html" target="_self" style="margin-left:20px;">back</a></p>
-       <td> <img src="pic6.gif" alt="pokemonDB" style="width:350px;height:262.5px;"></td>
+       <td> <img src="food.jpg" alt="food" style="width:350px;height:262.5px;"></td>
        </tr>
 	</table>
     </form>    
