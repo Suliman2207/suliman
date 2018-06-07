@@ -36,6 +36,7 @@
         <thead><tr>
         <th><h0 style="color:#00284d;">1</h0></th>
         <th><h0 style="color:#00284d;">2</h0></th>
+	<th><h0 style="color:#00284d;">3</h0></th>	
         </tr></thead>
         <tbody>
 <?php
