@@ -40,20 +40,21 @@
         <tbody>
 <?php
 
-$sql = "SELECT distinct Type1, COUNT(Type1) as counter
-FROM pokemonDataCenter
-GROUP BY Type1;";
+$sql = "SELECT type_sports, AVG(GPA) as Average GPA, AVG(weight) as Average Weight
+FROM Food
+Where coffee=2 AND comfort_food like 'chocolate%' ";
+GROUP BY type_sports;";
 	    $result = sqlsrv_query($conn, $sql);
         if($result)
         {
             while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
 	        {
-	            echo '<tr><td>' . $row['Type1'] . '</td><td>' . $row['counter'];
+	            echo '<tr><td>' . $row['type_sports'] . '</td><td>' . $row['Average GPA'] . '</td><td>' . $row['Average Weight'];
             }
         }
         else
         {
-            echo 'Error displaying Longest Drive Table';
+            echo 'Error';
         }
     ?>   
    </tbody>
