@@ -67,7 +67,7 @@
             <table border="0" cellpadding="5">
 		<tr>
 			<td><h0 style="color:#00284d;">GPA:</h0></td>
-			<td><input name="GPA" type="float" size="10"></td>
+			<td><input name="GPA" type="floaat" size="10"></td>
 		</tr>
 		    
 		<tr>
