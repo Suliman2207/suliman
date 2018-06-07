@@ -46,7 +46,7 @@
             <table border="0" cellpadding="5">
 		<tr>
 			<td><h0 style="color:#00284d;">GPA:</h0></td>
-			<td><input name="GPA" type="number" size="40" required>*</td>
+			<td><input name="GPA" type="number" size="40"></td>
 		</tr>
 		<tr>
             <td><h0 style="color:#00284d;">Gender:</h0></td>
@@ -98,7 +98,8 @@
          <tr>
             <td><h0 style="color:#00284d;">Whats for dinner:</h0></td>
 			<td><input name="meals_dinner_friend" type="text" size="40"></td>
-		</tr>          <tr>
+		</tr>        
+		    <tr>
 		<td><h0 style="color:#00284d;">Whats is your sport:</h0></td>
 			<td><input name="type_sports" type="text" size="40"></td>
 		</tr> 
