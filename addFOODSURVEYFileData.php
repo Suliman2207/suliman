@@ -38,8 +38,8 @@
     if (($handle = fopen($file, "r")) !== FALSE) {
         while (($data = fgetcsv($handle,1000, ",")) !== FALSE) {
          $sql="INSERT INTO Food(id, GPA, Gender, coffee, comfort_food, comfort_food_reasons, diet_current, eating_changes, fav_cuisine, food_childhood, healthy_meal, ideal_diet, meals_dinner_friend, type_sports, weight) VALUES ( 
-         $counter++;
-	'".$data[0]."',
+         
+	'".counter++;."',
 	'".$data[0]."',
         '".$data[1]."', 
         '".$data[2]."',
