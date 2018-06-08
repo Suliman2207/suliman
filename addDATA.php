@@ -14,8 +14,8 @@
     }
 
 $sql="SELECT count(*) FROM Food";
-$result = sqlsrv_query($conn, $sql);
-$row = sqlsrv_fetch_array($result, SQLSRV_FETCH_NUMERIC);
+$result1 = sqlsrv_query($conn, $sql);
+$row = sqlsrv_fetch_array($result1, SQLSRV_FETCH_NUMERIC);
 
 
    if (isset($_POST["submit"]))
