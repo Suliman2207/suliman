@@ -64,7 +64,7 @@ if (isset($_POST["submit"]))
 
 		<tr>
 		<td><h0 style="color:#00284d;">Gender:</h0></td>
-			<td><select name="Gender" >
+			<td><select name="Gender" type="number">
 			<option value=1 selected> Male </option>
 			<option value=2> Female </option>
 			</select> </td>
@@ -73,7 +73,7 @@ if (isset($_POST["submit"]))
 
 <tr>
 <td><h0 style="color:#00284d;">coffee:</h0></td>
-				<td><select name="coffee">
+				<td><select name="coffee" type="number">
 				<option value=2 selected> Yes </option>
 				<option value=1> No </option>
 				</select> </td>
