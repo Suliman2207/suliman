@@ -31,7 +31,7 @@ if (isset($_POST["submit"]))
 	//echo $sql."<br>"; //debug
 	$result = sqlsrv_query($conn, $sql); $count++;
 	// In case of failure
-	if (!$result)
+	if ($result==false)
 	{
 		die("$count Couldn't add the part specified.<br>");
 	}
