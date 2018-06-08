@@ -27,6 +27,12 @@
         die(print_r(sqlsrv_errors(), true));
     }
    
+	$sql="SELECT count(*) FROM Food";
+	$result1 = sqlsrv_query($conn, $sql);
+	$row = sqlsrv_fetch_array($result1, SQLSRV_FETCH_NUMERIC);
+	$counter=$row[0];
+	
+	
     if (isset($_POST["submit"])){
     //get the csv file 
     $file = $_FILES[csv][tmp_name];  
@@ -37,27 +43,22 @@
     $row = 1;
     if (($handle = fopen($file, "r")) !== FALSE) {
         while (($data = fgetcsv($handle,1000, ",")) !== FALSE) {
+		
+	if ($data[0]=="nan" || $data[1]=="nan" || $data[2]=="nan" || $data[3]=="nan" || $data[4]=="nan" || $data[5]=="nan" || $data[6]=="nan" || 
+	    $data[7]=="nan" || $data[8]=="nan" || $data[9]=="nan" || $data[10]=="nan" || $data[11]=="nan" || $data[12]=="nan" || 
+	    $data[13]=="nan") {continue;}
+		
+		
+		
          $sql="INSERT INTO Food(id, GPA, Gender, coffee, comfort_food, comfort_food_reasons, diet_current, eating_changes, fav_cuisine, food_childhood, healthy_meal, ideal_diet, meals_dinner_friend, type_sports, weight) VALUES ( 
          
-	'".$data[0]."',
-        '".$data[1]."', 
-        '".$data[2]."',
-        ".$data[3].",
-        ".$data[4].",
-        ".$data[5].",
-        ".$data[6].",
-        ".$data[7].",
-        ".$data[8].",
-        ".$data[9].",
-	".$data[10].",
-	".$data[11].",
-	".$data[12].",
-	".$data[13].",
-        ".$data[14]."
-        ); 
-        ";
+	'" addslashes($counter) . "','" . addslashes($data[0]) . "','" . addslashes($data[1]) . "','" . addslashes($data[2]) . "','" . addslashes($data[3]) . "','" . 
+		 addslashes($data[4]) . "','" . addslashes($data[5]) . "','" . addslashes($data[6]) . "','" . addslashes($data[7]) . "','" . 
+		 addslashes($data[8]) . "','" . addslashes($data[9]) . "','" . addslashes($data[10]) . "','" . addslashes($data[11]) . "','" . 
+		 addslashes($data[12]) . "','" . addslashes($data[13]) . "');";
+
         
-        $result=sqlsrv_query($conn, $sql);
+        $result=sqlsrv_query($conn, $sql); $counter++;
         }
         if(!$result)
         {
