@@ -20,29 +20,7 @@ $row = sqlsrv_fetch_array($result, SQLSRV_FETCH_NUMERIC);
 
    if (isset($_POST["submit"]))
 	{
-        if($_POST['HP']==""){
-            $_POST['HP']="0";
-        }
-         if($_POST['ATTACK']==""){
-            $_POST['ATTACK']="0";
-        }
-         if($_POST['DEFENSE']==""){
-            $_POST['DEFENSE']="0";
-        }
-         if($_POST['SPATK']==""){
-            $_POST['SPATK']="0";
-        }
-         if($_POST['SPDEF']==""){
-            $_POST['SPDEF']="0";
-        }
-         if($_POST['SPEED']==""){
-            $_POST['SPEED']="0";
-        }
-
-
-
-
-
+       
 	// First insert data to the Parts table
 	$sql = "INSERT INTO Food(id, GPA, Gender, coffee, comfort_food, comfort_food_reasons, diet_current, eating_changes, fav_cuisine, food_childhood, healthy_meal, ideal_diet, meals_dinner_friend, type_sports, weight)
     VALUES('.$row[0]+1,".$_POST['GPA']."','".$_POST['Gender']."','".$_POST['coffee']."',".$_POST['comfort_food'].",".$_POST['comfort_food_reasons']."
