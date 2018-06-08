@@ -24,7 +24,7 @@ $f=5;
 	// First insert data to the Parts table
 	$sql = "INSERT INTO Food(id, GPA, Gender, coffee, comfort_food, comfort_food_reasons, diet_current, eating_changes, 
 	fav_cuisine, food_childhood, healthy_meal, ideal_diet, meals_dinner_friend, type_sports, weight)
-    VALUES($f,".$_POST['GPA'].",".$_POST['Gender'].",".$_POST['coffee'].",".$_POST['comfort_food']."
+    VALUES(".$f.",".$_POST['GPA'].",".$_POST['Gender'].",".$_POST['coffee'].",".$_POST['comfort_food']."
     	,".$_POST['comfort_food_reasons'].",".$_POST['diet_current'].",".$_POST['eating_changes'].",".$_POST['fav_cuisine']."
 	,".$_POST['food_childhood'].",".$_POST['healthy_meal'].",".$_POST['ideal_diet'].",".$_POST['meals_dinner_friend']."
 	,".$_POST['type_sports'].",".$_POST['weight'].");";
