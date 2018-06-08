@@ -40,7 +40,6 @@
     echo "$file";
     echo "<br>";
 
-    $row = 1;
     if (($handle = fopen($file, "r")) !== FALSE) {
         while (($data = fgetcsv($handle,1000, ",")) !== FALSE) {
 		
@@ -50,9 +49,8 @@
 		
 		
 		
-         $sql="INSERT INTO Food(id, GPA, Gender, coffee, comfort_food, comfort_food_reasons, diet_current, eating_changes, fav_cuisine, food_childhood, healthy_meal, ideal_diet, meals_dinner_friend, type_sports, weight) VALUES ( 
-         
-	'" addslashes($counter) . "','" . addslashes($data[0]) . "','" . addslashes($data[1]) . "','" . addslashes($data[2]) . "','" . addslashes($data[3]) . "','" . 
+         $sql="INSERT INTO Food(id, GPA, Gender, coffee, comfort_food, comfort_food_reasons, diet_current, eating_changes, fav_cuisine, food_childhood, healthy_meal, ideal_diet, meals_dinner_friend, type_sports, weight)
+	 VALUES ('" . addslashes($counter) . "','" . addslashes($data[0]) . "','" . addslashes($data[1]) . "','" . addslashes($data[2]) . "','" . addslashes($data[3]) . "','" . 
 		 addslashes($data[4]) . "','" . addslashes($data[5]) . "','" . addslashes($data[6]) . "','" . addslashes($data[7]) . "','" . 
 		 addslashes($data[8]) . "','" . addslashes($data[9]) . "','" . addslashes($data[10]) . "','" . addslashes($data[11]) . "','" . 
 		 addslashes($data[12]) . "','" . addslashes($data[13]) . "');";
