@@ -16,6 +16,7 @@ if($conn === false)
 $sql="SELECT count(*) FROM Food";
 $result1 = sqlsrv_query($conn, $sql);
 $row = sqlsrv_fetch_array($result1, SQLSRV_FETCH_NUMERIC);
+$count=$row[0];
 
 if (isset($_POST["submit"]))
 {
@@ -23,7 +24,7 @@ if (isset($_POST["submit"]))
 	// First insert data to the Parts table
 	$sql = "INSERT INTO Food(id, GPA, Gender, coffee, comfort_food, comfort_food_reasons, diet_current, eating_changes, 
 	fav_cuisine, food_childhood, healthy_meal, ideal_diet, meals_dinner_friend, type_sports, weight)
-    VALUES($row[0]+1,".$_POST['GPA'].",".$_POST['Gender'].",".$_POST['coffee'].",".$_POST['comfort_food']."
+    VALUES($count++;,".$_POST['GPA'].",".$_POST['Gender'].",".$_POST['coffee'].",".$_POST['comfort_food']."
     	,".$_POST['comfort_food_reasons'].",".$_POST['diet_current'].",".$_POST['eating_changes'].",".$_POST['fav_cuisine']."
 	,".$_POST['food_childhood'].",".$_POST['healthy_meal'].",".$_POST['ideal_diet'].",".$_POST['meals_dinner_friend']."
 	,".$_POST['type_sports'].",".$_POST['weight'].");";
@@ -32,7 +33,7 @@ if (isset($_POST["submit"]))
 	// In case of failure
 	if (!$result)
 	{
-		die("$row[0] Couldn't add the part specified.<br>");
+		die("$count Couldn't add the part specified.<br>");
 	}
 	echo "The Data has been added to the database.<br><br>";
 }
