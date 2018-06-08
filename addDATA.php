@@ -27,7 +27,7 @@ $row = sqlsrv_fetch_array($result1, SQLSRV_FETCH_NUMERIC);
     VALUES($row[0]+1,".$_POST['GPA'].",".$_POST['Gender'].",".$_POST['coffee'].",".$_POST['comfort_food']."
     	,".$_POST['comfort_food_reasons'].",".$_POST['diet_current'].",".$_POST['eating_changes'].",".$_POST['fav_cuisine']."
 	,".$_POST['food_childhood'].",".$_POST['healthy_meal'].",".$_POST['ideal_diet'].",".$_POST['meals_dinner_friend']."
-	,".$_POST['type_sports'].",".$_POST['weight'].");
+	,".$_POST['type_sports'].",".$_POST['weight'].");";
 	//echo $sql."<br>"; //debug
 	$result = sqlsrv_query($conn, $sql);
 	// In case of failure
