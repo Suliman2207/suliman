@@ -59,7 +59,7 @@ if (isset($_POST["submit"]))
 
                     <tr>
                         <td><h0 style="color:#00284d;">GPA:</h0></td>
-                        <td><input name="GPA" type="number" step="any" size="10"></td>
+                        <td><input name="GPA" type="number" step="0.01" size="10"></td>
                     </tr>
 
                     <tr>
