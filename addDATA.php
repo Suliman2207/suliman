@@ -52,7 +52,7 @@ if (isset($_POST["submit"]))
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
     <table border="0" cellpadding="5">
         <tr>
-            <td>
+            
                 <table border="0" cellpadding="5">
 
 
