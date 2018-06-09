@@ -80,7 +80,7 @@ if (isset($_POST["submit"]))
 
                     <tr>
                     <td><h0 style="color:#00284d;">comfort_food:</h0></td>
-                    <td><input name="comfort_food" type="text" size="40"></td>
+                    <td><input name="comfort_food" type="" size="40"></td>
                     </tr>
 
                     <tr>
