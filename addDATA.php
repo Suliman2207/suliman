@@ -50,7 +50,10 @@ if (isset($_POST["submit"]))
     <h1 style="color:#6666ff;">Here you can add a new Data to our world</h1></center>
 <br><br>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
-   
+    <table border="0" cellpadding="5">
+        <tr>
+            <td>
+                <table border="0" cellpadding="5">
 
 
                     <tr>
@@ -75,12 +78,10 @@ if (isset($_POST["submit"]))
                             </select> </td>
                     </tr>
 
-
-                 <tr>  
-			 <td><h0 style="color:#00284d;">comfort_food:</h0></td>
+                    <tr>
+                    <td><h0 style="color:#00284d;">comfort_food:</h0></td>
                     <td><input name="comfort_food" type="text" size="40"></td>
-                    
-			</tr>
+                    </tr>
 
                     <tr>
                         <td><h0 style="color:#00284d;">comfort_food_reasons:</h0></td>
@@ -131,10 +132,11 @@ if (isset($_POST["submit"]))
                     <tr>
                         <td colspan="2"><button type="reset" value="Reset">Reset</button></td>
                     </tr>
-                
+                </table>
                 <p><a href="index.php" type="text/html" target="_self" style="margin-left:20px;">back</a></p>
             <td> <img src="food.jpg" alt="food" style="width:350px;height:262.5px;"></td>
-        
+        </tr>
+    </table>
 </form>
 </body>
 </html>
