@@ -80,12 +80,16 @@ if (isset($_POST["submit"]))
 
 
                     <td><h0 style="color:#00284d;">comfort_food:</h0></td>
-                    <td><input name="comfort_food"  size="10"></td>
+                
+	<input type="text" id="comfort_food" name="comfort_food" value="<?php echo isset($_POST["comfort_food"]) ? $_POST["comfort_food"] : ''; ?>">
+
+			
+		// <td><input name="comfort_food" type="text" size="40"></td>
                     </tr>
 
                     <tr>
                         <td><h0 style="color:#00284d;">comfort_food_reasons:</h0></td>
-                        <td><input name="comfort_food_reasons" type="text" size="10"></td>
+                        <td><input name="comfort_food_reasons" type="text" size="40"></td>
                     </tr>
                     <tr>
                         <td><h0 style="color:#00284d;">Diet:</h0></td>
