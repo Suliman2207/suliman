@@ -59,7 +59,7 @@ if (isset($_POST["submit"]))
 
                     <tr>
                         <td><h0 style="color:#00284d;">GPA:</h0></td>
-                        <td><input name="GPA" type="number" step="any" size="10"></td>
+                        <td><input name="GPA" type="number" step="0.01" size="10"></td>
                     </tr>
 
                     <tr>
@@ -128,7 +128,7 @@ if (isset($_POST["submit"]))
                         <td><input name="weight" type="number" size="40"></td>
                     </tr>
                     <tr>
-                        <button type="submit" value="submit" name="submit"> add </button><br>
+                        <td colspan="2"><br><button <input name="submit" type="submit" value="Add!"></button></td>
                     </tr>
                     <tr>
                         <td colspan="2"><button type="reset" value="Reset">Reset</button></td>
