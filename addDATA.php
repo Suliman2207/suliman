@@ -119,7 +119,7 @@ if (isset($_POST["submit"]))
 
                     <tr>
                         <td><h0 style="color:#00284d;">Whats is your sport:</h0></td>
-                        <td><input name="type_sports" type="text" size="40"></td>
+                        <td><input name="type_sports"  size="40"></td>
                     </tr>
 
                     <tr>
