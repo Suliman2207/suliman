@@ -52,7 +52,7 @@ if (isset($_POST["submit"]))
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
     <table border="0" cellpadding="5">
         <tr>
-            
+            <td>
                 <table border="0" cellpadding="5">
 
 
@@ -135,7 +135,7 @@ if (isset($_POST["submit"]))
                 </table>
                 <p><a href="index.php" type="text/html" target="_self" style="margin-left:20px;">back</a></p>
             <td> <img src="food.jpg" alt="food" style="width:350px;height:262.5px;"></td>
-        </tr>
+       </td> </tr>
     </table>
 </form>
 </body>
