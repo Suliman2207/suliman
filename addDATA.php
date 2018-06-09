@@ -51,20 +51,17 @@ if (isset($_POST["submit"]))
     <h1 style="color:#6666ff;">Here you can add a new Data to our world</h1></center>
 <br><br>
 <form action="<?php $_SERVER['PHP_SELF'] ?>" method="POST">
-    <table border="0" cellpadding="5">
-        <tr>
-            <td>
-                <table border="0" cellpadding="5">
+    
 
 
                     <tr>
                         <td><h0 style="color:#00284d;">GPA:</h0></td>
-                        <td><input name="GPA" type="number" step="0.01" size="10"></td>
+                        <td><input name="GPA" type="number" step="any" size="10"></td>
                     </tr>
 
                     <tr>
                         <td><h0 style="color:#00284d;">Gender:</h0></td>
-                        <td><select name="Gender" type="number">
+                        <td><select name="Gender" >
                                 <option value="1" selected> Male </option>
                                 <option value="2"> Female </option>
                             </select> </td>
@@ -73,7 +70,7 @@ if (isset($_POST["submit"]))
 
                     <tr>
                         <td><h0 style="color:#00284d;">coffee:</h0></td>
-                        <td><select name="coffee" type="number">
+                        <td><select name="coffee" >
                                 <option value="2" selected> Yes </option>
                                 <option value="1"> No </option>
                             </select> </td>
@@ -128,16 +125,16 @@ if (isset($_POST["submit"]))
                         <td><input name="weight" type="number" size="40"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><br><button <input name="submit" type="submit" value="Add!"></button></td>
+                        <td colspan="2"><br><input name="submit" type="submit" value="Add!"></td>
                     </tr>
                     <tr>
                         <td colspan="2"><button type="reset" value="Reset">Reset</button></td>
                     </tr>
-                </table>
+                
                 <p><a href="index.php" type="text/html" target="_self" style="margin-left:20px;">back</a></p>
             <td> <img src="food.jpg" alt="food" style="width:350px;height:262.5px;"></td>
         </tr>
-    </table>
+   
 </form>
 </body>
 </html>
