@@ -1,7 +1,7 @@
 <html>
-<body style="background-color: #edcddd;text-align: center" dir="ltr">
-<h1>Possible duplication information</h1> <br>
-<h2>Duplicate companies according to relations set</h2> <br>
+<body style="background-color: #E6E6FB;text-align: center" dir="ltr">
+<h1>duplication information</h1> <br>
+<h2>Duplicate Companies As Appearing in the Relations Set</h2> <br>
 
 
 <table border="1" width="500">
@@ -17,9 +17,9 @@
     </tr>
 <?php
 $server = "tcp:techniondbcourse01.database.windows.net,1433";
-$user = "azhar0zoabi";
+$user = "suliman1";
 $pass = "Qwerty12!";
-$database = "azhar0zoabi";
+$database = "suliman1";
 $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
 sqlsrv_configure('WarningsReturnAsErrors', 0);
 $conn = sqlsrv_connect($server, $c);
