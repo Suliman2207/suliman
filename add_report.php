@@ -40,12 +40,12 @@ while ($row =sqlsrv_fetch_array($result, sqlsrv_fetch_assoc))
     $pos=strpos($text_area, $company_LEI,0);
     if($pos!==false and $company_LEI_Composer!=$company_LEI)
     {
-        $sql5= "insert into Relations(LEI1, LEI2, relation_type) Values ('$company_LEI_Composer','$company_LEI','');";
+        $sql5= "insert into InARelationshipWith(First_LEI, Second_LEI, Kind_of_Relationship) Values ('$company_LEI_Composer','$company_LEI','');";
 $result5=sqlsrv_query($conn,$sql5);
     }
     
 }
-$sql=" INSERT INTO Report(LEI,timestamp_attribute,content) Values ('$company_LEI_Composer',current_timestamp, '$text_area');";
+$sql=" INSERT INTO Report(LEI,Time_Stamp,Text) Values ('$company_LEI_Composer',current_timestamp, '$text_area');";
 $result=sqlsrv_query($conn,$sql);
 }
 ?>
