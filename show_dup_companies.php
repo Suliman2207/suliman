@@ -49,7 +49,7 @@ if($conn === false)
     }?>
 </table>
 
-<h2> <Br>Duplicate Companies that have the same Name, same Region and County:) </h2><br>
+<h2> <Br>Duplicate Companies that have the same Name, same Region and County </h2><br>
 
 <table border="1" width="500">
     <colgroup><col width="150">
