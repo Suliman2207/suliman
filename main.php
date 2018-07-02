@@ -31,7 +31,7 @@
                 <col width="150">
             </colgroup>
             <tr>
-                <th>company_name</th>
+                <th>Name</th>
                 <th>Relation Type</th>
 
             </tr>
@@ -55,9 +55,9 @@
                 if ($wanted == NULL) {
                     echo "Error , You must specify a user LEI";
                 } else {
-                    $sql = "SELECT Company.company_name, Relations.relation_type
- FROM Relations LEFT OUTER JOIN Company  on Relations.LEI2 = Company.LEI
- WHERE Relations.LEI1='$wanted'
+                    $sql = "SELECT Company.Name, InARelationshipWith.Kind_of_Relationship
+ FROM InARelationshipWith LEFT OUTER JOIN Company  on InARelationshipWith.Second_LEI = Company.LEI
+ WHERE InARelationshipWith.First_LEI='$wanted'
 
 ";
 
@@ -66,8 +66,8 @@
                         die(FormatErrors(sqlsrv_errors()));
                     while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
                         echo '<tr>
-                        <td>' . $row['company_name'] . '</td>
-                        <td>' . $row['relation_type'] . '</td>
+                        <td>' . $row['Name'] . '</td>
+                        <td>' . $row['Kind_of_Relationship'] . '</td>
                         </tr>';
                     }
 
