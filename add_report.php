@@ -1,5 +1,5 @@
 <html>
-<body style="background-color: #edcddd;">
+<body style="background-color: #E6E6FB;">
 <link rel="stylesheet" href="StyleSheet.css">
 <meta charset="utf-8" />
 <div>
