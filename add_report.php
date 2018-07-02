@@ -3,23 +3,23 @@
 <link rel="stylesheet" href="StyleSheet.css">
 <meta charset="utf-8" />
 <div>
-<h1>Add a Report!</h1>
+<h1>Add Report!</h1>
 <br>
-<img src="giphy.gif" width="300" alt"could not show image!">
+<img src="giphy.gif" width="310" alt"could not show image!">
 <form >
     Enter LEI: <input type="text" name="LEI_number">
     <br>
     <textarea name="report_text" rows="5" cols="40"><?php echo $report_text;?>
-    Write report content here :)
+    Write report content here! 
     </textarea>
     <br>  <input type="submit">
 </form>
 </div>
 <?php
 $server = "tcp:techniondbcourse01.database.windows.net,1433";
-$user = "azhar0zoabi";
+$user = "suliman1";
 $pass = "Qwerty12!";
-$database = "azhar0zoabi";
+$database = "suliman1";
 $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
 sqlsrv_configure('WarningsReturnAsErrors', 0);
 $conn = sqlsrv_connect($server, $c);
