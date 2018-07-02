@@ -49,7 +49,7 @@ if($conn === false)
     }?>
 </table>
 
-<h2> <Br>Duplicate companies that have the same name and same Region and county:) </h2><br>
+<h2> <Br>Duplicate Companies that have the same Name, same Region and County:) </h2><br>
 
 <table border="1" width="500">
     <colgroup><col width="150">
@@ -60,7 +60,7 @@ if($conn === false)
         <th>First_LEI</th>
         <th>Name 1</th>
         <th>Second_LEI</th>
-        <th>company name 2</th>
+        <th>Name 2</th>
     </tr>
 
     <?php
