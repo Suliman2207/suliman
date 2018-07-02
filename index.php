@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <body bgcolor="#E6E6FB">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" >
     <meta charset="utf-8" />
     <title>Company</title>
 </head>
