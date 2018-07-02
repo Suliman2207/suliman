@@ -48,7 +48,7 @@ if (isset($_POST["submit2"])){
     $file = $_FILES[csv][tmp_name];
     if (($handle = fopen($file, "r")) !== FALSE) {
         while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
-            $sql="INSERT INTO Relations(First_LEI, Second_LEI, Kind_of_Relationship) VALUES 
+            $sql="INSERT INTO InARelationshipWith(First_LEI, Second_LEI, Kind_of_Relationship) VALUES 
      		('".addslashes($data[0])."','".addslashes($data[1])."','".addslashes($data[2])."'); ";
             sqlsrv_query($conn, $sql);
         }
