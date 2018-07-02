@@ -11,9 +11,9 @@
     </colgroup>
     <tr>
         <th>First_LEI</th>
-        <th>company_name 1</th>
+        <th>Name 1</th>
         <th>Second_LEI</th>
-        <th>company name 2</th>
+        <th>Name 2</th>
     </tr>
 <?php
 $server = "tcp:techniondbcourse01.database.windows.net,1433";
