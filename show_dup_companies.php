@@ -10,9 +10,9 @@
         <col width="150">
     </colgroup>
     <tr>
-        <th>LEI1</th>
+        <th>First_LEI</th>
         <th>company_name 1</th>
-        <th>LEI2</th>
+        <th>Second_LEI</th>
         <th>company name 2</th>
     </tr>
 <?php
@@ -28,11 +28,11 @@ if($conn === false)
     echo "error";
     die(print_r(sqlsrv_errors(), true));
 }
-     $sql= "SELECT LEI1, C1.company_name AS NAME1, LEI2, C2.company_name AS NAME2
-    FROM Relations, Company C1, Company C2
-     WHERE LEI1=C1.LEI AND LEI2=C2.LEI AND C1.LEI<>C2.LEI AND LEI1  IN (SELECT R1.LEI1
-      FROM Relations R1, Relations R2
-      WHERE R1.LEI2=R2.LEI2 AND R1.LEI1!=R2.LEI1 AND (R1.relation_type=R2.relation_type)) ";
+     $sql= "SELECT First_LEI, C1.Name AS NAME1, Second_LEI, C2.Name AS NAME2
+    FROM InARelationshipWith, Company C1, Company C2
+     WHERE First_LEI=C1.LEI AND Second_LEI=C2.LEI AND C1.LEI<>C2.LEI AND First_LEI  IN (SELECT R1.First_LEI
+      FROM InARelationshipWith R1, InARelationshipWith R2
+      WHERE R1.Second_LEI=R2.Second_LEI AND R1.First_LEI!=R2.First_LEI AND (R1.Kind_of_Relationship=R2.Kind_of_Relationship)) ";
 
     $result = sqlsrv_query($conn, $sql);
     if ($result == FALSE)
@@ -41,9 +41,9 @@ if($conn === false)
     while($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC))
     {
         echo '<tr>
-                        <td>'.$row['LEI1'].'</td>
+                        <td>'.$row['First_LEI'].'</td>
                         <td>'.$row['NAME1'].'</td>
-                        <td>'.$row['LEI2'].'</td>
+                        <td>'.$row['Second_LEI'].'</td>
                         <td>'.$row['NAME2'].'</td>
                         </tr>';
     }?>
@@ -57,9 +57,9 @@ if($conn === false)
         <col width="150">
     </colgroup>
     <tr>
-        <th>LEI1</th>
+        <th>First_LEI</th>
         <th>company_name 1</th>
-        <th>LEI2</th>
+        <th>Second_LEI</th>
         <th>company name 2</th>
     </tr>
 
