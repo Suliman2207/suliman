@@ -10,7 +10,7 @@
 <br>
 <br>
 <br>
-<h1> Add Relation File </h1>
+<h1> Add File of Relation </h1>
 <br><form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" enctype="multipart/form-data">
     <br><div><input name="csv" type="file" id="csv" />
         <br><br><input type="submit" name="submit2" value="submit" /></div>
@@ -20,9 +20,9 @@
 
 // Connecting to the database
 $server = "techniondbcourse01.database.windows.net";
-$user = "azhar0zoabi";
+$user = "suliman1";
 $pass = "Qwerty12!";
-$database = "azhar0zoabi";
+$database = "suliman1";
 $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
 sqlsrv_configure('WarningsReturnAsErrors', 0);
 $conn = sqlsrv_connect($server, $c);
