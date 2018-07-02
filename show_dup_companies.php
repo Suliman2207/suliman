@@ -58,15 +58,15 @@ if($conn === false)
     </colgroup>
     <tr>
         <th>First_LEI</th>
-        <th>company_name 1</th>
+        <th>Name 1</th>
         <th>Second_LEI</th>
         <th>company name 2</th>
     </tr>
 
     <?php
-        $sql= "SELECT C1.LEI as le1, C1.company_name as NAM1, C2.LEI as le2, C2.company_name as NAM2
+        $sql= "SELECT C1.LEI as le1, C1.Name as NAM1, C2.LEI as le2, C2.Name as NAM2
 FROM Company C1, Company C2
-WHERE C1.company_name=C2.company_name AND C1.LEI<>C2.LEI AND C1.region=C2.region AND C1.country=C2.country
+WHERE C1.Name=C2.Name AND C1.LEI<>C2.LEI AND C1.region=C2.region AND C1.country=C2.country
  ";
 
         $result = sqlsrv_query($conn, $sql);
