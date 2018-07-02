@@ -1,17 +1,17 @@
 <html >
 <link rel="stylesheet" href="StyleSheet.css">
 <meta charset="utf-8" />
-<body style="background-color:  #edcddd;text-align: center" dir="ltr">
+<body style="background-color:  #E6E6FB;text-align: center" dir="ltr">
 <div>
-    <h1>Give Me Some Money!</h1>
-    <h2> General Description</h2>
+    <h1>Give Money!</h1>
+    <h2> Grade is 100%</h2>
 
-<img src="money.jpg" width="300" alt"could not show image!">
+<img src="money.jpeg" width="300" alt"could not show image!">
 <br>
 <table border="1" width="150"> <br>
     <colgroup><col width="150">
-        <col width="150">
-        <col width="150">
+        <col width="155">
+        <col width="155">
     </colgroup>
 </table>
 
@@ -39,9 +39,9 @@
       <?php
 
             $server = "tcp:techniondbcourse01.database.windows.net,1433";
-            $user = "azhar0zoabi";
+            $user = "suliman1";
             $pass = "Qwerty12!";
-            $database = "azhar0zoabi";
+            $database = "suliman1";
             $c = array("Database" => $database, "UID" => $user, "PWD" => $pass);
             sqlsrv_configure('WarningsReturnAsErrors', 0);
             $conn = sqlsrv_connect($server, $c);
